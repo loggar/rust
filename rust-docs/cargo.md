@@ -1,33 +1,47 @@
 # cargo
 
-Create a new project and check:
+## commands
 
 ```
-cargo new rust-project
-```
+# Create a new cargo project
+$ cargo new rust-project
 
-```
-# Create a new project:
-cargo new
 # Build the project:
-cargo build
+$ cargo build
+
 # Run the project:
-cargo run
+$ cargo run
+
 # Update project dependencies:
-cargo update
+$ cargo update
+
 # Run tests:
-cargo test
+$ cargo test
+
 # Generate the project documentation via rustdoc:
-cargo doc
+$ cargo doc
+
 # Analyze the project to see it has any errors, without building it:
-cargo check
+$ cargo check
 ```
 
 ```
 # Log in to crates.io with the API token:
-cargo login
+$ cargo login
+
 # Make the local crate uploadable to crates.io:
-cargo package
+$ cargo package
+
 # Upload the crate to crates.io:
-cargo publish
+$ cargo publish
+```
+
+## Sub program
+
+```
+$ cargo new sub_program --bin
+# src/bin/sub_program.rs
+
+$ cargo build
+$ cargo run --bin sub_program
 ```
