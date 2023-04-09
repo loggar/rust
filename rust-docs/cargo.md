@@ -4,7 +4,7 @@
 
 ```
 # Create a new cargo project
-$ cargo new rust-project
+$ cargo new rust_project
 
 # Build the project:
 $ cargo build
@@ -18,7 +18,7 @@ $ cargo update
 # Run tests:
 $ cargo test
 
-# Generate the project documentation via rustdoc:
+# Generate the project documentation via rust-doc:
 $ cargo doc
 $ cargo doc --open
 
@@ -45,4 +45,27 @@ $ cargo new sub_program --bin
 
 $ cargo build
 $ cargo run --bin sub_program
+```
+
+Run the main program:
+
+```
+$ cargo run --bin <main_program_name>
+```
+
+In your `Cargo.toml` file, you specify the binary targets:
+
+```
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "bin_sub1"
+path = "src/bin/sub_program.rs"
+```
+
+```
+$ cargo run --bin main
+$ cargo run --bin bin_sub1
 ```
