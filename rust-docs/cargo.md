@@ -20,6 +20,7 @@ $ cargo test
 
 # Generate the project documentation via rustdoc:
 $ cargo doc
+$ cargo doc --open
 
 # Analyze the project to see it has any errors, without building it:
 $ cargo check
