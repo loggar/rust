@@ -14,3 +14,7 @@ path = "src/main.rs"
 [[bin]]
 name = "bin1"
 path = "src/bin/sub_program.rs"
+
+[lib]
+name = "lib_root"
+path = "src/lib.rs"

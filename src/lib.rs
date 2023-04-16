@@ -1,3 +1,5 @@
+pub mod lib_types;
+
 pub fn sum_even_numbers_in_range(start: u32, end: u32) -> u32 {
     (start..=end).filter(|&n| n % 2 == 0).sum()
 }
