@@ -5,10 +5,10 @@ fn immutable_variables() -> i32 {
     return x;
 }
 
-// 
+//
 
 #[test]
-fn var_1_immut_test_1() {
+fn immut_test() {
     let x = immutable_variables();
 
     // assert_eq!(x, 6, "{} is assigned to x", 6);
