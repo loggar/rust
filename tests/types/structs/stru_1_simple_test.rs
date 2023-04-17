@@ -8,7 +8,7 @@ struct Person {
 #[test]
 fn struct_simple_test() {
     let p = Person {
-        name: String::from("Jhon Doe"),
+        name: String::from("John Doe"),
         age: 40,
     };
 
@@ -18,6 +18,6 @@ fn struct_simple_test() {
         "get_type_of"
     );
 
-    assert_eq!(p.name, "Jhon Doe", "p.name");
+    assert_eq!(p.name, "John Doe", "p.name");
     assert_eq!(p.age, 40, "p.age");
 }
