@@ -13,11 +13,11 @@ fn struct_simple_test() {
     };
 
     assert_eq!(
+        "types_tests::types::structs::struct_1_simple_test::Person",
         get_type_of(&p),
-        "types_tests::types::structs::stru_1_simple_test::Person",
-        "get_type_of"
+        "get_type_of check"
     );
 
-    assert_eq!(p.name, "John Doe", "p.name");
-    assert_eq!(p.age, 40, "p.age");
+    assert_eq!("John Doe", p.name, "p.name");
+    assert_eq!(40, p.age, "p.age");
 }

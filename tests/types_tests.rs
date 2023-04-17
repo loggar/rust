@@ -1,10 +1,14 @@
 mod types {
+    pub mod type_names {
+        pub mod crate_type_name_usage_test;
+        pub mod lib_get_type_of_usage_test;
+    }
     pub mod tuples {
-        pub mod tup_1_simple_test;
-        pub mod tup_2_type_test;
+        pub mod tuple_1_simple_test;
+        pub mod tuple_2_type_test;
     }
     pub mod structs {
-        pub mod stru_1_simple_test;
+        pub mod struct_1_simple_test;
     }
 }
 // $ cargo test --test types_tests

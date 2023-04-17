@@ -9,8 +9,8 @@ fn tuple_type_test() {
     println!("{}", get_type_of(&immutable));
 
     assert_eq!(
-        get_type_of(&immutable),
         "(alloc::string::String, u8)",
+        get_type_of(&immutable),
         "get_type_of {}",
         "SampleTupleTestType"
     );

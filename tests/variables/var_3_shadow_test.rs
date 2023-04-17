@@ -7,16 +7,16 @@ fn shadow_test() {
     println!("The value of x is: {}", x);
 
     let expected = (5 + 1) * 2;
-    assert_eq!(x, expected, "x should be now {}", expected);
+    assert_eq!(expected, x, "x should be now {}", expected);
 }
 
 #[test]
 fn shadow_type_mismatch_test() {
-    let spaces = "   ";
+    let spaces: &str = "   ";
 
     // spaces  spaces.len();
     // error[E0308]: mismatched types
 
-    // assert_eq!(spaces, 3, "spaces should be now {}", 3);
-    assert_eq!(spaces.len(), 3, "spaces should be now {}", 3);
+    // assert_eq!( 3,spaces, "spaces should be now {}", 3);
+    assert_eq!(3, spaces.len(), "spaces should be now {}", 3);
 }
