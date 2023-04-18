@@ -8,3 +8,27 @@ extensions:
 rust-analyzer
 CodeLLDB
 ```
+
+## formatting rules
+
+Install `rustfmt`: the official Rust code formatter
+
+```
+$ rustup component add rustfmt
+```
+
+`/.rustfmt.toml`
+
+```
+max_width = 120
+```
+
+vscode settings:
+
+```
+{
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+}
+```
