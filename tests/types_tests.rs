@@ -1,6 +1,7 @@
 mod types {
     pub mod scalar_types {
         pub mod bool_1_test;
+        pub mod char_1_test;
         pub mod numbers_1_simple_test;
     }
     pub mod type_names {
