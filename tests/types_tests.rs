@@ -1,4 +1,7 @@
 mod types {
+    pub mod scalar_types {
+        pub mod numbers_1_simple_test;
+    }
     pub mod type_names {
         pub mod crate_type_name_usage_test;
         pub mod lib_get_type_of_usage_test;

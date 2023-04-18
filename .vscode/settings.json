@@ -9,7 +9,11 @@
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
 	},
 	"files.watcherExclude": {
-		"**/target/**": true
+		"**/target/**": true,
+		"**/target-ex/**": true
 	},
 	"rust-analyzer.showUnlinkedFileNotification": false,
+	"rust-analyzer.rustfmt.extraArgs": [
+		"--config-path=./.rustfmt.toml"
+	],
 }

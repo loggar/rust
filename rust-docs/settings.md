@@ -23,12 +23,23 @@ $ rustup component add rustfmt
 max_width = 120
 ```
 
-vscode settings:
+vscode settings
 
 ```
 {
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
+    "rust-analyzer.rustfmt.extraArgs": [
+		"--config-path=./.rustfmt.toml"
+	],
 }
+```
+
+Run `rustfmt` for all `rs` files
+
+```
+$ find . -type f -name "*.rs" -exec rustfmt {} \;
+
+> Get-ChildItem -Path . -Filter *.rs -Recurse | ForEach-Object { rustfmt $_.FullName }
 ```
