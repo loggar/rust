@@ -1,4 +1,7 @@
 mod types {
+    pub mod arrays {
+        pub mod array_1_test;
+    }
     pub mod scalar_types {
         pub mod bool_1_test;
         pub mod char_1_test;

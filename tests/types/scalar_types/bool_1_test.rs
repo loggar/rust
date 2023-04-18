@@ -1,7 +1,7 @@
 use lib_root::lib_types::get_type_of;
 
 #[test]
-fn number_int_test() {
+fn scalar_bool_test() {
     let t = true;
     let f: bool = false; // with explicit type annotation
 

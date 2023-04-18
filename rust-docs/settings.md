@@ -31,8 +31,8 @@ vscode settings
         "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
     "rust-analyzer.rustfmt.extraArgs": [
-		"--config-path=./.rustfmt.toml"
-	],
+        "--config-path=${workspaceFolder}/.rustfmt.toml"
+    ],
 }
 ```
 
