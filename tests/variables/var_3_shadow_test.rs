@@ -14,9 +14,9 @@ fn shadow_test() {
 fn shadow_type_mismatch_test() {
     let spaces: &str = "   ";
 
-    // spaces  spaces.len();
+    // spaces = spaces.len();
     // error[E0308]: mismatched types
 
-    // assert_eq!( 3,spaces, "spaces should be now {}", 3);
+    // assert_eq!( 3, spaces, "spaces should be now {}", 3);
     assert_eq!(3, spaces.len(), "spaces should be now {}", 3);
 }

@@ -5,8 +5,6 @@ fn immutable_variables() -> i32 {
     return x;
 }
 
-//
-
 #[test]
 fn immut_test() {
     let x = immutable_variables();
