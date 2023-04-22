@@ -1,11 +1,14 @@
-pub mod lib_types;
+pub mod lib_types; // export other lib // use lib_root::lib_types::get_type_of;
 
 pub fn sum_even_numbers_in_range(start: u32, end: u32) -> u32 {
     (start..=end).filter(|&n| n % 2 == 0).sum()
 }
 
+// Marked with #[cfg(test)], will only be compiled and executed when running
+// cargo test. The test function test_add will not be included in the final
+// binary when you build or run the application using cargo build or cargo run.
 #[cfg(test)]
-mod tests {
+mod lib_mod_test {
     use super::*;
 
     #[test]
@@ -21,3 +24,5 @@ mod tests {
         );
     }
 }
+
+// $ cargo test --lib

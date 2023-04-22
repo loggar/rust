@@ -2,7 +2,7 @@ pub fn add_two_int(a: i32, b: i32) -> i32 {
     a + b
 }
 
-// $ cargo test --test simple_mod_test
+// $ cargo test --test _simple_mod_test
 
 #[cfg(test)]
 mod tests {
