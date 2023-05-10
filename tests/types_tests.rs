@@ -7,6 +7,12 @@ mod types {
         pub mod char_1_test;
         pub mod numbers_1_simple_test;
     }
+
+    pub mod slices {
+        pub mod slice_1_string_test;
+        pub mod slice_2_int_test;
+    }
+
     pub mod type_names {
         pub mod crate_type_name_usage_test;
         pub mod lib_get_type_of_usage_test;
