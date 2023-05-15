@@ -23,6 +23,7 @@ mod types {
     }
     pub mod structs {
         pub mod struct_1_simple_test;
+        pub mod struct_2_builder_test;
     }
 }
 // $ cargo test --test types_tests
