@@ -24,6 +24,8 @@ mod types {
     pub mod structs {
         pub mod struct_1_simple_test;
         pub mod struct_2_builder_test;
+        pub mod struct_3_tuple_struct_test;
+        pub mod struct_4_unit_like_struct_without_field_test;
     }
 }
 // $ cargo test --test types_tests
