@@ -1,6 +1,6 @@
 # build
 /target
-/target-ex
+/target-ex-apps
 
 # os
 .DS_Store

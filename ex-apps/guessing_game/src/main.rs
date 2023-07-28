@@ -13,7 +13,7 @@ fn main() {
     let mut num = 1;
 
     loop {
-        println!("Please input your guess ({})", num);
+        println!("Please input your guess [1-100] (try {})", num);
 
         let mut guess = String::new();
 

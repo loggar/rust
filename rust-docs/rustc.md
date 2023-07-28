@@ -3,5 +3,5 @@
 ## example
 
 ```
-rustc ./ex-hello/hello.rs --out-dir ./target-ex-hello && ./target-ex-hello/hello
+rustc ./ex-apps/hello/hello.rs --out-dir ./target-ex-apps && ./target-ex-apps/hello
 ```

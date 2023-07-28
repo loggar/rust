@@ -186,7 +186,7 @@
     {
       "label": "build-and-run-a-ex-main",
       "type": "shell",
-      "command": "rustc ${file} --out-dir ${workspaceFolder}/target-ex && ${workspaceFolder}/target-ex/${fileBasenameNoExtension}",
+      "command": "rustc ${file} --out-dir ${workspaceFolder}/target-ex-apps && ${workspaceFolder}/target-ex-apps/${fileBasenameNoExtension}",
       "group": {
         "kind": "build",
         "isDefault": true
