@@ -26,6 +26,8 @@ mod types {
         pub mod struct_2_builder_test;
         pub mod struct_3_tuple_struct_test;
         pub mod struct_4_unit_like_struct_without_field_test;
+        pub mod struct_5_debug_test;
+        pub mod struct_6_method_test;
     }
 }
 
