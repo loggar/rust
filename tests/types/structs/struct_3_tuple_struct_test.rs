@@ -9,13 +9,13 @@ fn use_tuple_struct_test() {
     let origin: Point = Point(0, 0, 0);
 
     assert_eq!(
-        "types_tests::types::structs::struct_3_tuple_struct_test::Color",
+        "_t_types_tests::types::structs::struct_3_tuple_struct_test::Color",
         get_type_of(&black),
         "get_type_of check"
     );
 
     assert_eq!(
-        "types_tests::types::structs::struct_3_tuple_struct_test::Point",
+        "_t_types_tests::types::structs::struct_3_tuple_struct_test::Point",
         get_type_of(&origin),
         "get_type_of check"
     );

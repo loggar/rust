@@ -28,4 +28,5 @@ mod types {
         pub mod struct_4_unit_like_struct_without_field_test;
     }
 }
-// $ cargo test --test types_tests
+
+// $ cargo test --test _t_types_tests

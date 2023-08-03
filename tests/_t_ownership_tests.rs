@@ -4,4 +4,4 @@ mod ownership {
     pub mod ownership_3_reference_test;
 }
 
-// $ cargo test --test ownership_tests
+// $ cargo test --test _t_ownership_tests

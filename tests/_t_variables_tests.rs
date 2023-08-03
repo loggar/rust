@@ -4,4 +4,4 @@ mod variables {
     pub mod var_3_shadow_test;
 }
 
-// $ cargo test --test variables_tests
+// $ cargo test --test _t_variables_tests

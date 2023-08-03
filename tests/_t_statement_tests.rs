@@ -5,4 +5,4 @@ mod statement {
     pub mod control_flow_while_test;
 }
 
-// $ cargo test --test statement_tests
+// $ cargo test --test _t_statement_tests

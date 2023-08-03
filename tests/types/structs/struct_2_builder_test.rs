@@ -48,7 +48,7 @@ fn struct_build_user_test() {
     let user_1 = build_user(String::from("someone@example.com"), String::from("someUsername123"));
 
     assert_eq!(
-        "types_tests::types::structs::struct_2_builder_test::User",
+        "_t_types_tests::types::structs::struct_2_builder_test::User",
         get_type_of(&user_1),
         "get_type_of check"
     );
