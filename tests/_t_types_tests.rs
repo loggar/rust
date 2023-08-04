@@ -2,6 +2,10 @@ mod types {
     pub mod arrays {
         pub mod array_1_test;
     }
+    pub mod enums {
+        pub mod enum_1_variants_test;
+        pub mod enum_2_variants_data_test;
+    }
     pub mod scalar_types {
         pub mod bool_1_test;
         pub mod char_1_test;
