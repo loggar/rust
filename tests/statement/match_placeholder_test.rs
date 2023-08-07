@@ -1,5 +1,5 @@
 #[test]
-fn match_options_test() {
+fn match_default_test() {
     fn fn_convert(x: u8) -> &'static str {
         match x {
             1 => "one",
