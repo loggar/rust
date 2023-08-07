@@ -5,6 +5,7 @@ mod types {
     pub mod enums {
         pub mod enum_1_variants_test;
         pub mod enum_2_variants_data_test;
+        pub mod enum_3_variants_struct_data_test;
     }
     pub mod scalar_types {
         pub mod bool_1_test;
