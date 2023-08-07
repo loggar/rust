@@ -7,6 +7,11 @@ mod types {
         pub mod enum_2_variants_data_test;
         pub mod enum_3_variants_struct_data_test;
     }
+
+    pub mod options {
+        pub mod options_1_value_match_test;
+    }
+
     pub mod scalar_types {
         pub mod bool_1_test;
         pub mod char_1_test;
