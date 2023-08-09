@@ -1,4 +1,6 @@
-# print
+# log
+
+## print
 
 ```rs
 fn immutable_variables() -> i32 {
