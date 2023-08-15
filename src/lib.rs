@@ -12,6 +12,11 @@ pub mod modules {
         pub mod use_paths_into_scope;
         pub mod use_with_pub_re_export;
     }
+
+    pub mod externals {
+        pub mod cargo_dependency;
+        pub mod nested_paths_to_clean_up_use_list;
+    }
 }
 
 #[cfg(test)]
