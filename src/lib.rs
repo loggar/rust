@@ -1,6 +1,5 @@
 pub mod lib_simple; // ./lib_simple.rs
-pub mod lib_sub_mod;
-pub mod lib_types; // export other lib // use lib_root::lib_types::get_type_of;
+pub mod lib_types; // export lib: use lib_root::lib_types::get_type_of;
 
 pub mod modules {
     pub mod visibility {
@@ -9,6 +8,8 @@ pub mod modules {
         pub mod module_visibility; // ./modules/visibility/module_visibility.rs
         pub mod paths_exposing_with_pub;
         pub mod paths_relative_with_super;
+        pub mod use_as_new_name;
+        pub mod use_paths_into_scope;
     }
 }
 
