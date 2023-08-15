@@ -1,5 +1,11 @@
 pub mod lib_sub_mod;
-pub mod lib_types; // export other lib // use lib_root::lib_types::get_type_of; //
+pub mod lib_types; // export other lib // use lib_root::lib_types::get_type_of;
+
+pub mod modules {
+    pub mod visibility {
+        pub mod module_visibility; // ./modules/visibility/module_visibility.rs
+    }
+}
 
 pub fn sum_even_numbers_in_range(start: u32, end: u32) -> u32 {
     (start..=end).filter(|&n| n % 2 == 0).sum()

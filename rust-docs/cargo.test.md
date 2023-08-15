@@ -8,7 +8,7 @@ $ cargo test
 
 ```
 # tests/simple_test.rs
-$ cargo test --test simple_test
+$ cargo test --test _simple_test
 ```
 
 ## Test lib in `src/`

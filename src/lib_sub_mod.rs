@@ -14,4 +14,5 @@ mod tests {
     }
 }
 
+// lib.rs: pub mod lib_sub_mod
 // $ cargo test --lib lib_sub_mod

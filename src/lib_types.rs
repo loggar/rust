@@ -16,5 +16,5 @@ fn simple_get_type_of_test() {
     );
 }
 
-// lib.rs: mod lib_types
+// lib.rs: pub mod lib_types
 // $ cargo test --lib lib_types

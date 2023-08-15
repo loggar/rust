@@ -10,7 +10,7 @@ typename = "0.1.2"
 
 [[bin]]
 name = "main"
-path = "src/main.rs"
+path = "src/bin/main.rs"
 
 [[bin]]
 name = "bin1"
