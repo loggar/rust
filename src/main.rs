@@ -1,3 +1,5 @@
+extern crate lib_root;
+
 use lib_root::sum_even_numbers_in_range;
 
 fn main() {

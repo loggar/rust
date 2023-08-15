@@ -10,7 +10,7 @@
 	},
 	"files.watcherExclude": {
 		"**/target/**": true,
-		"**/target-ex-apps/**": true
+		"**/target.ex-apps/**": true
 	},
 	"rust-analyzer.showUnlinkedFileNotification": false,
 	"rust-analyzer.rustfmt.extraArgs": [

@@ -9,8 +9,13 @@ $ cargo new rust_project
 # Build the project:
 $ cargo build
 
+# Build release: -> ./target/release/
+$ cargo build --release
+
 # Run the project:
 $ cargo run
+$ cargo run --bin main
+$ cargo run --bin bin1
 
 # Update project dependencies:
 $ cargo update
