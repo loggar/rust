@@ -1,4 +1,4 @@
-use lib_root::sum_even_numbers_in_range;
+use lib_root::lib_simple::sum_even_numbers_in_range;
 
 fn main() {
     let start = 1;

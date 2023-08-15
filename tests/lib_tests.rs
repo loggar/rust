@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod lib_tests {
     // use lib_root::*;
-    use lib_root::sum_even_numbers_in_range;
+    use lib_root::lib_simple::sum_even_numbers_in_range;
 
     #[test]
     fn test_sum_even_numbers_in_range() {
