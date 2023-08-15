@@ -10,6 +10,7 @@ pub mod modules {
         pub mod paths_relative_with_super;
         pub mod use_as_new_name;
         pub mod use_paths_into_scope;
+        pub mod use_with_pub_re_export;
     }
 }
 
