@@ -22,5 +22,5 @@ fn string_new_from_test() {
     let _hello = String::from("Здравствуйте");
     let _hello = String::from("Hola");
 
-    assert_eq!("안녕하세요".to_string(), hello, "length of an enum vector");
+    assert_eq!("안녕하세요".to_string(), hello, "new string from literal");
 }
