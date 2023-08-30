@@ -15,6 +15,9 @@ fn hashmap_iterate_simple_test() {
         sum += value;
     }
 
-    assert_eq!("YellowBlue", result, "iterate key value pairs of hashmap");
+    assert!(
+        "YellowBlue" == result || "BlueYellow" == result,
+        "iterate key value pairs of hashmap"
+    );
     assert_eq!(60, sum, "iterate key value pairs of hashmap");
 }

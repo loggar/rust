@@ -6,6 +6,7 @@ mod collections {
     }
     mod strings {
         pub mod string_and_str_test;
+        pub mod string_equals_test;
         pub mod string_new_from_test;
         pub mod string_update_test;
     }
