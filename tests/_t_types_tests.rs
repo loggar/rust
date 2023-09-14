@@ -8,6 +8,12 @@ mod types {
         pub mod enum_3_variants_struct_data_test;
     }
 
+    pub mod generics {
+        pub mod generics_function_arg_test;
+        pub mod generics_struct_method_test;
+        pub mod generics_struct_simple_test;
+    }
+
     pub mod options {
         pub mod options_1_value_match_test;
     }
