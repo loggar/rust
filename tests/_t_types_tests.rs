@@ -33,6 +33,7 @@ mod types {
         pub mod tuple_1_simple_test;
         pub mod tuple_2_type_test;
     }
+
     pub mod structs {
         pub mod struct_1_simple_test;
         pub mod struct_2_builder_test;

@@ -19,6 +19,10 @@ pub mod modules {
     }
 }
 
+pub mod trait_samples {
+    pub mod aggregator;
+}
+
 #[cfg(test)]
 mod lib_tests {
     #[test]
