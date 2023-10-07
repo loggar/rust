@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod statement {
     pub mod control_flow_for_in_test;
     pub mod control_flow_if_test;

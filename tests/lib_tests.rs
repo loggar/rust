@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod lib_tests {
     // use lib_root::*;
     use lib_root::lib_simple::sum_even_numbers_in_range;
@@ -19,7 +18,6 @@ mod lib_tests {
 
 // $ cargo test --test lib_tests
 
-#[cfg(test)]
 mod trait_ex {
     pub mod trait_1_simple_test;
     pub mod trait_2_impl_test;

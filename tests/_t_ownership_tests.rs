@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod ownership {
     pub mod ownership_1_simple_test;
     pub mod ownership_2_borrow_test;

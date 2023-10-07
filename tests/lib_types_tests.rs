@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod lib_types_tests {
     // use lib_root::*;
     use lib_root::lib_types::get_type_of;

@@ -27,3 +27,31 @@ running 2 tests
 test lib_mod_test::test_sum_even_numbers_in_range ... ok
 test lib_types::simple_get_type_of_test ... ok
 ```
+
+## help
+
+```
+cargo test --help
+
+# help about after the "--" keyword
+cargo test -- --help
+```
+
+## thread
+
+```
+# run all the tests in only one thread
+cargo test -- --test-threads=1
+```
+
+## output
+
+```
+cargo test -- --show-output
+```
+
+## run tests including ignored
+
+```
+cargo test -- --include-ignored
+```

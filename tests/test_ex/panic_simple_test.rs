@@ -14,7 +14,7 @@ impl Guess {
 
 #[test]
 #[should_panic]
-fn greater_than_100() {
+fn greater_than_100_should_panic() {
     let g = Guess::new(200);
 
     assert_eq!(4, g.value);

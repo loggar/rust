@@ -1,3 +1,5 @@
+// $ cargo test --test _sample_tests
+
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
@@ -10,7 +12,6 @@ pub fn add_two_int(a: i32, b: i32) -> i32 {
     a + b
 }
 
-#[cfg(test)]
 mod sample_tests {
     use super::*;
 
@@ -49,4 +50,10 @@ fn adding_failure_messages() {
     );
 }
 
-// $ cargo test --test _sample_test
+// ignore a test
+#[test]
+#[ignore]
+fn an_ignored_test() {
+    // code that takes an hour to run
+    assert_eq!(0, 0);
+}
