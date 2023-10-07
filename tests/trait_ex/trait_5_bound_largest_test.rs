@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod bound_largest_tests {
     use std::cmp::PartialOrd;
 

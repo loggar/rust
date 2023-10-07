@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod bound_simple_tests {
     use lib_root::trait_samples::aggregator::Summarizable;
 

@@ -1,3 +1,4 @@
+#[cfg(test)]
 mod collections {
     mod hashmaps {
         pub mod hashmap_iterate_test;

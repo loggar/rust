@@ -1,3 +1,4 @@
+#[cfg(test)]
 mod types {
     pub mod arrays {
         pub mod array_1_test;

@@ -1,4 +1,3 @@
-#[cfg(test)]
 mod default_impl_tests {
     use lib_root::trait_samples::aggregator::Summarizable;
 
