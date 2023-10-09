@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "cli-greprs"
+name = "greprs"
 version = "0.1.0"
