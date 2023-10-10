@@ -4,7 +4,7 @@ use std::io::prelude::*;
 
 pub struct Config {
     pub query: String,
-    pub filename: String,
+    pub file_path: String,
 }
 
 impl Config {
@@ -14,14 +14,14 @@ impl Config {
         }
 
         let query = args[1].clone();
-        let filename = args[2].clone();
+        let file_path = args[2].clone();
 
-        Ok(Config { query, filename })
+        Ok(Config { query, file_path })
     }
 }
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
-    let mut f = File::open(config.filename)?;
+    let mut f = File::open(config.file_path)?;
 
     let mut contents = String::new();
     f.read_to_string(&mut contents)?;
