@@ -1,3 +1,5 @@
+// $ cargo test --test lib_tests
+
 mod lib_tests {
     // use lib_root::*;
     use lib_root::lib_simple::sum_even_numbers_in_range;
@@ -15,8 +17,6 @@ mod lib_tests {
         );
     }
 }
-
-// $ cargo test --test lib_tests
 
 mod trait_ex {
     mod trait_1_simple_test;
