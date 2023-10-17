@@ -1,21 +1,28 @@
+pub mod closures {
+    mod closure_concept {
+        mod closure_ex_05_env_capture;
+        mod closure_ex_06_env_capture;
+    }
+}
+
 pub mod lib_simple; // ./lib_simple.rs
 pub mod lib_types; // export lib: use lib_root::lib_types::get_type_of;
 
 pub mod modules {
-    pub mod visibility {
-        pub mod make_enum_public;
-        pub mod make_struct_public;
-        pub mod module_visibility; // ./modules/visibility/module_visibility.rs
-        pub mod paths_exposing_with_pub;
-        pub mod paths_relative_with_super;
-        pub mod use_as_new_name;
-        pub mod use_paths_into_scope;
-        pub mod use_with_pub_re_export;
+    mod visibility {
+        mod make_enum_public;
+        mod make_struct_public;
+        mod module_visibility; // ./modules/visibility/module_visibility.rs
+        mod paths_exposing_with_pub;
+        mod paths_relative_with_super;
+        mod use_as_new_name;
+        mod use_paths_into_scope;
+        mod use_with_pub_re_export;
     }
 
-    pub mod externals {
-        pub mod cargo_dependency;
-        pub mod nested_paths_to_clean_up_use_list;
+    mod externals {
+        mod cargo_dependency;
+        mod nested_paths_to_clean_up_use_list;
     }
 }
 
