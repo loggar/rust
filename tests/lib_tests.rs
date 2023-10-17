@@ -19,9 +19,9 @@ mod lib_tests {
 // $ cargo test --test lib_tests
 
 mod trait_ex {
-    pub mod trait_1_simple_test;
-    pub mod trait_2_impl_test;
-    pub mod trait_3_function_test;
-    pub mod trait_4_bound_test;
-    pub mod trait_5_bound_largest_test;
+    mod trait_1_simple_test;
+    mod trait_2_impl_test;
+    mod trait_3_function_test;
+    mod trait_4_bound_test;
+    mod trait_5_bound_largest_test;
 }

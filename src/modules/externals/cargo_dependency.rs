@@ -5,6 +5,7 @@
 
 use rand::Rng;
 
+#[allow(dead_code)]
 pub fn rand_simple() -> i32 {
     let secret_number = rand::thread_rng().gen_range(1..=100);
     println!("secret_number is: {}", secret_number);

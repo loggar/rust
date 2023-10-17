@@ -1,4 +1,5 @@
 mod front_of_house {
+    #[allow(dead_code)]
     pub mod hosting {
         pub fn add_to_waitlist() {}
     }
@@ -6,6 +7,7 @@ mod front_of_house {
 
 use crate::modules::visibility::use_paths_into_scope::front_of_house::hosting;
 
+#[allow(dead_code)]
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
 }
@@ -14,6 +16,7 @@ pub fn eat_at_restaurant() {
 // Bringing module level into scope in an idiomatic way.
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 pub fn bring_mod_level_via_use() {
     let mut map = HashMap::new();
     map.insert(1, 2);

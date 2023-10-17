@@ -1,11 +1,13 @@
 mod front_of_house {
     pub mod hosting {
+        #[allow(dead_code)]
         pub fn add_to_waitlist() {}
     }
 }
 
 pub use crate::modules::visibility::use_with_pub_re_export::front_of_house::hosting;
 
+#[allow(dead_code)]
 pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
 }

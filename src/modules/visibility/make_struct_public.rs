@@ -17,6 +17,7 @@ mod back_of_house {
     }
 }
 
+#[allow(dead_code)]
 pub fn eat_at_restaurant() {
     // Order a breakfast in the summer with Rye toast
     let mut meal = back_of_house::Breakfast::summer("Rye");
