@@ -19,7 +19,7 @@ pub mod modules {
     }
 }
 
-pub mod trait_samples {
+pub mod traits {
     pub mod aggregator;
 }
 

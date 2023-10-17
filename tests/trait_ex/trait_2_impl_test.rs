@@ -1,5 +1,5 @@
 mod default_impl_tests {
-    use lib_root::trait_samples::aggregator::Summarizable;
+    use lib_root::traits::aggregator::Summarizable;
 
     pub struct NewsArticle {
         pub headline: String,

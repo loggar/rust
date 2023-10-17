@@ -1,5 +1,5 @@
 mod bound_simple_tests {
-    use lib_root::trait_samples::aggregator::Summarizable;
+    use lib_root::traits::aggregator::Summarizable;
 
     pub fn notify<T: Summarizable>(item: T) -> String {
         return format!("Breaking news! {}", item.summarize());

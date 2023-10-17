@@ -1,5 +1,5 @@
 mod trait_in_function_tests {
-    use lib_root::trait_samples::aggregator::Summarizable;
+    use lib_root::traits::aggregator::Summarizable;
 
     pub fn notify(item: &impl Summarizable) -> String {
         return format!("Breaking news! {}", item.summarize());
