@@ -20,3 +20,9 @@ path = "src/bin/sub_program.rs"
 [lib]
 name = "lib_root"
 path = "src/lib.rs"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
