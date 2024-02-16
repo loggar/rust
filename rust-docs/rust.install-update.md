@@ -1,4 +1,4 @@
-# Rust install
+# Rust install/update
 
 ## install
 
@@ -72,4 +72,13 @@ source "$HOME/.cargo/env"
 
 ```
 . "$HOME/.cargo/env"
+```
+
+## update
+
+```
+$ rustup update stable
+
+$ cargo --version
+cargo 1.76.0 (c84b36747 2024-01-18)
 ```
