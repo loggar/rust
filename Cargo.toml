@@ -26,3 +26,10 @@ opt-level = 0
 
 [profile.release]
 opt-level = 3
+
+[workspace]
+
+members = [
+    "subproject1",
+    "subproject2",
+]
