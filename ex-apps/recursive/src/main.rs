@@ -10,5 +10,5 @@ fn recursive(x: usize) {
 }
 
 fn main() {
-    recursive(50_000);
+    recursive(10_000);
 }

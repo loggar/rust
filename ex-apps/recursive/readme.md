@@ -8,5 +8,5 @@ $ cargo build --release
 
 ```
 $ cd target/release
-$ hyperfine ./recursive
+$ hyperfine -i ./recursive
 ```
