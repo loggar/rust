@@ -80,6 +80,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "recursive"
+version = "0.1.0"
+
+[[package]]
 name = "rust_project"
 version = "0.1.0"
 dependencies = [
