@@ -82,3 +82,26 @@ $ rustup update stable
 $ cargo --version
 cargo 1.76.0 (c84b36747 2024-01-18)
 ```
+
+## Alpine (dependencies)
+
+```
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+$ source $HOME/.cargo/env # or . "$HOME/.cargo/env"
+$ rustup default stable
+$ cargo --version
+```
+
+```
+apk add gcompat
+apk add musl-dev
+apk add glibc-bin
+
+# vscode.rust-analyzer
+apk add build-base
+cc --version
+
+rustup target add x86_64-unknown-linux-musl
+cargo build --target=x86_64-unknown-linux-musl
+
+```
