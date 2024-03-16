@@ -24,3 +24,18 @@ Octal	0o77
 Binary	0b1111_0000
 Byte (u8 only)	b'A'
 ```
+
+## Data types, the stronger the better
+
+```rs
+let variable_one: u32 = 16; // this is an unsigned 32bit integer.
+let variable_two: char = 'c'; // this is a single character.
+let variable_three: f64 = 3.14; // this is a 64bit floating point.
+```
+
+## Float
+
+```rs
+let num_var_one: f64 = 3.1415926; // PI is probably the most famous float
+let num_var_two: f64 = 2.0; // even whole numbers must include at least one decimal place
+```
