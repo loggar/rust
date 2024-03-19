@@ -42,6 +42,7 @@ mod types {
         pub mod struct_5_debug_test;
         pub mod struct_6_method_test;
         pub mod struct_7_instance_ownership_test;
+        pub mod struct_8_tuple_struct_test;
     }
 }
 
