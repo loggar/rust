@@ -41,3 +41,27 @@ fn associated_function_test() {
 
     assert!(sq.width == sq.height, "associated function returns");
 }
+
+struct Book {
+    rating: f32,
+}
+
+impl Book {
+    // Method to check if the book is recommended based on its rating
+    fn is_recommended(&self, star_limit: f32) -> bool {
+        // Check if the rating is greater than the star_limit
+        self.rating > star_limit
+    }
+}
+
+const RECOMMEND_THRESHOLD: f32 = 3.5;
+
+#[test]
+fn method_call_with_args_test() {
+    let book1 = Book { rating: 4.8 };
+
+    // Call the is_recommended method on book1
+    let is_recommended = book1.is_recommended(RECOMMEND_THRESHOLD);
+
+    assert!(is_recommended, "method returns");
+}
