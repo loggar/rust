@@ -41,6 +41,7 @@ mod types {
         pub mod struct_4_unit_like_struct_without_field_test;
         pub mod struct_5_debug_test;
         pub mod struct_6_method_test;
+        pub mod struct_7_instance_ownership_test;
     }
 }
 
