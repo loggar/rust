@@ -6,6 +6,9 @@ mod types {
         pub mod enum_1_variants_test;
         pub mod enum_2_variants_data_test;
         pub mod enum_3_variants_struct_data_test;
+        mod enum_match_1_simple_test;
+        mod enum_match_2_discern_test;
+        mod enum_match_3_self_test;
     }
 
     pub mod generics {
