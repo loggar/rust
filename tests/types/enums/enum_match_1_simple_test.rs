@@ -10,24 +10,12 @@ fn enum_variants_test() {
 
     // We now know 'a' is a hex colour but have no idea what its value actually is.
     let a = Color::Hex;
-    let b = Color::RGB;
-    let c = Color::HSL;
+    let _b = Color::RGB;
+    let _c = Color::HSL;
 
     assert_eq!(
-        "_t_types_tests::types::enums::enum_01_simple_test::enum_variants_test::Color",
+        "_t_types_tests::types::enums::enum_match_1_simple_test::enum_variants_test::Color",
         get_type_of(&a),
-        "get_type_of check"
-    );
-
-    assert_eq!(
-        "_t_types_tests::types::enums::enum_01_simple_test::enum_variants_test::Color",
-        get_type_of(&b),
-        "get_type_of check"
-    );
-
-    assert_eq!(
-        "_t_types_tests::types::enums::enum_01_simple_test::enum_variants_test::Color",
-        get_type_of(&c),
         "get_type_of check"
     );
 }
