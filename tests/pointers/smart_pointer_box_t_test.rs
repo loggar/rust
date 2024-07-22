@@ -12,6 +12,7 @@ fn smart_pointer_box_t_test() {
     assert!(b == i, "b should be 5");
 }
 
+#[allow(dead_code)]
 enum List {
     Cons(i32, Box<List>),
     Nil,

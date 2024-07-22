@@ -1,5 +1,6 @@
 #[test]
 fn vector_enum_to_store_multiple_types_test() {
+    #[allow(dead_code)]
     enum SpreadsheetCell {
         Int(i32),
         Float(f64),

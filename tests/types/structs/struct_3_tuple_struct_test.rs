@@ -1,6 +1,8 @@
 use lib_root::lib_types::get_type_of;
 
+#[allow(dead_code)]
 struct Color(i32, i32, i32);
+#[allow(dead_code)]
 struct Point(i32, i32, i32);
 
 #[test]
