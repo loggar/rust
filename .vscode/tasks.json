@@ -1,14 +1,11 @@
 /*
  Before using this tasks.json you may like to consider trying one of the following VS Code extensions:
-
  rust-analyzer
     Marketplace: https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer
     Source: https://github.com/rust-analyzer/rust-analyzer
-
  rls
     Marketplace: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust
     Source: https://github.com/rust-lang/rls-vscode
-
 */
 // Available variables which can be used inside of strings.
 // ${workspaceRoot}: the root folder of the team
@@ -18,188 +15,190 @@
 // ${fileExtname}: the current opened file's extension
 // ${cwd}: the current working directory of the spawned process
 {
-  "version": "2.0.0",
   "tasks": [
     {
-      "label": "build",
       "args": [
         "build",
         "-v"
       ],
       "command": "cargo",
       "group": "build",
+      "label": "build",
       "problemMatcher": [
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
+          "owner": "rust",
           "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "column": 3,
+            "endColumn": 5,
+            "endLine": 4,
             "file": 1,
             "line": 2,
-            "column": 3,
-            "endLine": 4,
-            "endColumn": 5,
-            "severity": 6,
-            "message": 7
+            "message": 7,
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "severity": 6
           }
         }
       ]
     },
     {
-      "label": "clean",
       "args": [
         "clean"
       ],
       "command": "cargo",
+      "label": "clean",
       "presentation": {
         "reveal": "always"
       }
     },
     {
-      "label": "run",
       "args": [
         "run",
         "-v"
       ],
       "command": "cargo",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "label": "run",
       "presentation": {
         "reveal": "always"
       },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
       "problemMatcher": [
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
+          "owner": "rust",
           "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "column": 3,
+            "endColumn": 5,
+            "endLine": 4,
             "file": 1,
             "line": 2,
-            "column": 3,
-            "endLine": 4,
-            "endColumn": 5,
-            "severity": 6,
-            "message": 7
+            "message": 7,
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "severity": 6
           }
         }
       ]
     },
     {
-      "label": "test",
+      "type": "cargo",
       "args": [
         "test"
       ],
       "command": "cargo",
+      "group": {
+        "isDefault": false,
+        "kind": "test"
+      },
+      "label": "test",
       "presentation": {
         "reveal": "always"
       },
-      "group": {
-        "kind": "z",
-        "isDefault": false
-      },
       "problemMatcher": [
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
+          "owner": "rust",
           "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "column": 3,
+            "endColumn": 5,
+            "endLine": 4,
             "file": 1,
             "line": 2,
-            "column": 3,
-            "endLine": 4,
-            "endColumn": 5,
-            "severity": 6,
-            "message": 7
+            "message": 7,
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "severity": 6
           }
         },
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
-          "severity": "error",
+          "owner": "rust",
           "pattern": {
-            "regexp": "^.*panicked\\s+at\\s+'(.*)',\\s+(.*):(\\d+)$",
-            "message": 1,
             "file": 2,
-            "line": 3
-          }
+            "line": 3,
+            "message": 1,
+            "regexp": "^.*panicked\\s+at\\s+'(.*)',\\s+(.*):(\\d+)$"
+          },
+          "severity": "error"
         }
       ]
     },
     {
-      "label": "bench",
       "args": [
         "bench"
       ],
       "command": "cargo",
+      "group": "test",
+      "label": "bench",
       "presentation": {
         "reveal": "always"
       },
-      "group": "test",
       "problemMatcher": [
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
+          "owner": "rust",
           "pattern": {
-            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "column": 3,
+            "endColumn": 5,
+            "endLine": 4,
             "file": 1,
             "line": 2,
-            "column": 3,
-            "endLine": 4,
-            "endColumn": 5,
-            "severity": 6,
-            "message": 7
+            "message": 7,
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(\\d+):(\\d+)\\s+(warning|error):\\s+(.*)$",
+            "severity": 6
           }
         },
         {
-          "owner": "rust",
           "fileLocation": [
             "relative",
             "${workspaceRoot}"
           ],
-          "severity": "error",
+          "owner": "rust",
           "pattern": {
-            "regexp": "^.*panicked\\s+at\\s+'(.*)',\\s+(.*):(\\d+)$",
-            "message": 1,
             "file": 2,
-            "line": 3
-          }
+            "line": 3,
+            "message": 1,
+            "regexp": "^.*panicked\\s+at\\s+'(.*)',\\s+(.*):(\\d+)$"
+          },
+          "severity": "error"
         }
       ]
     },
     {
-      "label": "build-and-run-a-ex-main",
-      "type": "shell",
       "command": "rustc ${file} --out-dir ${workspaceFolder}/target.ex-apps && ${workspaceFolder}/target.ex-apps/${fileBasenameNoExtension}",
       "group": {
-        "kind": "build",
-        "isDefault": true
+        "isDefault": true,
+        "kind": "build"
       },
+      "label": "build-and-run-a-ex-main",
       "presentation": {
+        "clear": false,
         "echo": true,
-        "reveal": "always",
         "focus": false,
         "panel": "dedicated",
-        "showReuseMessage": true,
-        "clear": false
+        "reveal": "always",
+        "showReuseMessage": true
       },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "type": "shell"
     }
-  ]
+  ],
+  "type": "shell",
+  "version": "2.0.0"
 }
