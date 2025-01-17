@@ -29,7 +29,7 @@ opt-level = 3
 
 [workspace]
 
-members = [
+members = [ "ex-apps/playground",
     "ex-apps/recursive",
     "ex-web/leptos-project-1",
     "subproject1",
