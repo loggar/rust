@@ -29,9 +29,9 @@ opt-level = 3
 
 [workspace]
 
-members = [ "ex-apps/playground",
+members = [
     "ex-apps/recursive",
     "ex-web/leptos-project-1",
-    "subproject1",
-    "subproject2",
+    "sub_projects/subproject1",
+    "sub_projects/subproject2",
 ]
