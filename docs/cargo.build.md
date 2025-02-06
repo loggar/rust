@@ -1,6 +1,6 @@
 # cargo
 
-## build
+## Build
 
 ```
 # Create a new cargo project

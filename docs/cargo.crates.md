@@ -12,7 +12,7 @@ Crate Metadata
 
 ```
 [package]
-name = "guessing_game"
+name = "app_gussing_game"
 version = "0.1.0"
 edition = "2021"
 description = "A fun game where you guess what number the computer has chosen."
@@ -40,7 +40,7 @@ $ cargo publish
 ```sh
 $ cargo yank --vers 1.0.1
     Updating crates.io index
-        Yank guessing_game@1.0.1
+        Yank app_gussing_game@1.0.1
 ```
 
 By adding `--undo` to the command, you can also undo a yank and allow projects to start depending on a version again:
@@ -48,5 +48,5 @@ By adding `--undo` to the command, you can also undo a yank and allow projects t
 ```sh
 $ cargo yank --vers 1.0.1 --undo
     Updating crates.io index
-      Unyank guessing_game@1.0.1
+      Unyank app_gussing_game@1.0.1
 ```

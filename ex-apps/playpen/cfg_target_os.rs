@@ -22,6 +22,6 @@ fn main() {
 }
 
 /*
-rustc ./ex-apps/playpen/cfg_target_os.rs --out-dir ./target.ex-apps && \
-./target.ex-apps/cfg_target_os
+rustc ./ex-apps/playpen/cfg_target_os.rs --out-dir ./target.ex-apps/playpen && \
+./target.ex-apps/playpen/cfg_target_os
 */

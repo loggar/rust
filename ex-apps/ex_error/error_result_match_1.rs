@@ -14,5 +14,5 @@ fn main() {
     println!("Is it a file? {}", metadata.is_file());
 }
 
-// rustc ./ex-apps/ex_error_simple/error_result_match_1.rs --out-dir ./target.ex-apps
-// target.ex-apps/error_result_match_1
+// rustc ./ex-apps/ex_error_simple/error_result_match_1.rs --out-dir ./target.ex-apps/playpen
+// target.ex-apps/playpen/error_result_match_1
