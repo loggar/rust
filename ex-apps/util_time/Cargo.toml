@@ -9,6 +9,10 @@ edition = "2021"
 name = "tzc"
 path = "src/timezone_converter.rs"
 
+[[bin]]
+name = "tsc"
+path = "src/timestamp_converter.rs"
+
 [dependencies]
 chrono = "0.4"
 chrono-tz = "0.6"

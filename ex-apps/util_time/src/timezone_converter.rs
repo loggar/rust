@@ -7,10 +7,10 @@ use std::str::FromStr; // Import the FromStr trait
 struct Cli {
     #[clap(default_value = "UTC", help = "Source timezone")]
     from_tz: String,
-    #[clap(default_value = "Australia/Sydney", help = "Target timezone")]
-    to_tz: String,
     #[clap(default_value = "2023-01-01 12:00:00", help = "Time in YYYY-MM-DD HH:mm:ss format")]
     time: String,
+    #[clap(default_value = "Australia/Sydney", help = "Target timezone")]
+    to_tz: String,
 }
 
 fn parse_datetime(datetime_str: &str) -> Result<NaiveDateTime, String> {
@@ -44,7 +44,7 @@ fn convert_timezone(from_tz: &str, to_tz: &str, datetime: &str) -> Result<(Strin
 fn main() {
     let args = Cli::parse();
 
-    match convert_timezone(&args.from_tz, &args.to_tz, &args.time) {
+    match convert_timezone(&args.from_tz, &args.time, &args.to_tz) {
         Ok((source_time, target_time)) => {
             println!("From {} {}", source_time, args.from_tz);
             println!("To   {} {}", target_time, args.to_tz);
